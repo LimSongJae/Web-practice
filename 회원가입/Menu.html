@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script type="text/javascript">
+      function tagDisplay() {
+        var source = document.form.editor.value;
+        win = window.open(",", "width=400, height=300");
+        win.document.write(source);
+        return;
+      }
+      function tagClear() {
+        document.form.editor.value = "";
+        return;
+      }
+    </script>
+  </head>
+
+  <body>
+    <form name="form">
+      <input type="button" value="웹브라우저로 보기" onclick="tagDisplay()" />
+      <input type="button" value="새문서" onclick="tagClear()" />
+      <input type="reset" value="새 HTML 페이지" />
+      <p>
+        <textarea
+          name="editor"
+          cols="60"
+          rows="30"
+          style="padding: 5px; border: 2px silver solid"
+        >
+        &lt;html;&gt;
+        &lt;html;&gt;
+        &lt;html;&gt;
+        &lt;html;&gt;
+      </textarea
+        >
+      </p>
+    </form>
+  </body>
+</html>

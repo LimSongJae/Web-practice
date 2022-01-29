@@ -1,0 +1,39 @@
+.day{
+	background-color: yellow;
+}
+
+td{
+	width: 180px;
+}
+td, tr{
+	border: 3px solid black;
+}
+
+table{
+	border-collapse:collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.time{
+	background-color: green;
+}
+
+*{
+	text-align: center;
+}
+
+h3{
+	text-align: right;
+	font-family: 궁서체;
+}
+
+ul{
+	display: inline-block;
+	list-style-position: inside;
+}
+
+div{
+	background-color: #D5D5D5;
+	margin-top: 20px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script type="text/javascript"></script>
+  </head>
+
+  <body>
+    <table border="1" cellspacing="0" cellpadding="2">
+      <tr>
+        <script type="text/javascript">
+          var x,
+            y,
+            i,
+            j,
+            result = 0;
+
+          x = prompt("첫번째 숫자: ");
+          y = prompt("두번째 숫자: ");
+          for (i = 1; i <= 9; ++i) {
+            document.write("<td align=center bgcolor=yellow height=30><b>");
+            document.write(i + "단");
+            document.write("</b></td>");
+          }
+          document.write("</tr>");
+
+          for (i = 1; i <= 9; ++i) {
+            document.write("<tr>");
+            for (j = 1; j <= 9; ++j) {
+              if (i == x && j == y) {
+                document.write("<td bgcolor=silver height=30>");
+              } else {
+                document.write("<td>");
+              }
+
+              result = i * j;
+              document.write(i + " X " + j + "=" + result + "</td>");
+            }
+            document.write("</tr>");
+          }
+        </script>
+      </tr>
+    </table>
+  </body>
+</html>
